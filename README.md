@@ -4,20 +4,20 @@ Ce projet consiste à implémenter une régression linéaire simple pour prédir
 
 Deux programmes principaux sont développés :
 
-Programme de prédiction : prend un kilométrage en entrée et renvoie le prix estimé à l’aide des paramètres θ₀ et θ₁.
+_ Programme de prédiction : prend un kilométrage en entrée et renvoie le prix estimé à l’aide des paramètres θ₀ et θ₁.
 
-Programme d’entraînement : lit un dataset, entraîne le modèle par descente de gradient, puis enregistre les paramètres θ₀ et θ₁ pour être utilisés dans le programme de prédiction.
+_ Programme d’entraînement : lit un dataset, entraîne le modèle par descente de gradient, puis enregistre les paramètres θ₀ et θ₁ pour être utilisés dans le programme de prédiction.
 
 🔑 Notions importantes apprises
 
-Manipulation de datasets et gestion des fichiers CSV.
+. Manipulation de datasets et gestion des fichiers CSV.
 
-Implémentation de la descente de gradient pour ajuster les paramètres du modèle.
+. Implémentation de la descente de gradient pour ajuster les paramètres du modèle.
 
-Utilisation de la fonction estimatePrice = θ₀ + θ₁ × mileage.
+. Utilisation de la fonction estimatePrice = θ₀ + θ₁ × mileage.
 
-Calcul de la fonction de coût (MSE) pour évaluer la précision du modèle.
+. Calcul de la fonction de coût (MSE) pour évaluer la précision du modèle.
 
-Visualisation des données et de la droite de régression avec matplotlib.
+. Visualisation des données et de la droite de régression avec matplotlib.
 
-En bonus : traçage des graphes, affichage de la droite de régression et évaluation de la précision du modèle.
+. en bonus : traçage des graphes, affichage de la droite de régression et évaluation de la précision du modèle.
