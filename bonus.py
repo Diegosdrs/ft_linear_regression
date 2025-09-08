@@ -6,7 +6,7 @@
 #    By: dsindres <dsindres@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/09/04 13:30:39 by dsindres          #+#    #+#              #
-#    Updated: 2025/09/04 15:00:28 by dsindres         ###   ########.fr        #
+#    Updated: 2025/09/08 10:10:00 by dsindres         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -19,17 +19,14 @@ from my_linear_regression import MyLinearRegression as MyLR
 def predict_(x, thetas):
     # Vérification des types
     if not isinstance(x, np.ndarray) or not isinstance(thetas, np.ndarray):
-        print("1")
         return None
 
     # Vérification des tailles vides
     if x.size == 0 or thetas.size == 0:
-        print("2")
         return None
 
     # Vérification des dimensions
     if len(x.shape) != 2 or thetas.shape != (x.shape[1] + 1, 1):
-        print("3")
         return None
 
     # Étape 1 : Ajout d'une colonne de 1 au début de x pour obtenir X'
@@ -68,8 +65,7 @@ if __name__ == "__main__":
     rmse = np.sqrt(2 * perte)
     print(f"      L'erreur moyenne de prix est de {rmse:.2f} euros")
 
-    
-            
+             
     # Tracé du graphe
     plt.scatter(X, Y, color='blue', label='Prix réels') # Données réelles
     plt.plot(X, Y_real, color='red', label='Prix prédits') # Régression linéaire (droite)
